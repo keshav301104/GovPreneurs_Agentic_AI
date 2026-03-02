@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GovPreneursOpportunity",
+  "description": "Normalized schema for a government contracting opportunity extracted from SAM.gov, optimized for RAG vectorization and AI evaluation.",
+  "type": "object",
+  "required": [
+    "opportunity_id",
+    "title",
+    "agency",
+    "response_deadline",
+    "naics_code",
+    "description",
+    "status"
+  ],
+  "properties": {
+    "opportunity_id": {
+      "type": "string",
+      "description": "The unique Notice ID from SAM.gov."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the solicitation."
+    },
+    "agency": {
+      "type": "object",
+      "properties": {
+        "department": { "type": "string", "description": "e.g., Department of Defense" },
+        "sub_tier": { "type": "string", "description": "e.g., Department of the Army" }
+      }
+    },
+    "dates": {
+      "type": "object",
+      "properties": {
+        "posted_date": { "type": "string", "format": "date-time" },
+        "response_deadline": { "type": "string", "format": "date-time", "description": "Critical for filtering out expired opportunities." },
+        "last_modified": { "type": "string", "format": "date-time" }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "naics_code": { "type": "string", "description": "North American Industry Classification System code. Crucial for matching user business profiles." },
+        "psc_code": { "type": "string", "description": "Product Service Code." },
+        "set_aside": { "type": "string", "description": "e.g., 'Total Small Business', 'Veteran Owned'. Used for strict eligibility filtering." }
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "The general scope of work or synopsis. This text will be embedded and stored in the vector database."
+    },
+    "attachments": {
+      "type": "array",
+      "description": "List of URLs to the actual 50-page RFP PDFs that the RAG pipeline will download, chunk, and analyze.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "file_name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "type": { "type": "string", "enum": ["solicitation", "amendment", "other"] }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["Active", "Inactive", "Archived"]
+    },
+    "place_of_performance": {
+      "type": "object",
+      "properties": {
+        "city": { "type": "string" },
+        "state": { "type": "string" },
+        "country": { "type": "string" }
+      }
+    }
+  }
+}

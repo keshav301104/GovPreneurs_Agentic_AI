@@ -1,0 +1,14 @@
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# Python
+backend/__pycache__/
+backend/venv/
+backend/.venv/
+*.pyc
+
+# Environment & Local Data
+.env
+backend/data/*.pdf
+!backend/data/mock_solicitation.pdf
