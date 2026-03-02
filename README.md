@@ -1,29 +1,32 @@
 <div align="center">
-
-# 🏛️ GovPreneurs Agentic AI
-**Autonomous, Air-Gapped Federal Proposal Generation Pipeline**
-
-[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-🦜🕸️-blue?style=for-the-badge)](https://python.langchain.com/docs/langgraph)
-[![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-white?style=for-the-badge&logo=ollama&logoColor=black)](https://ollama.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+  <h1>🏛️ GovPreneurs Agentic AI</h1>
+  <h3>Autonomous, Air-Gapped Federal Proposal Generation Pipeline</h3>
+  <p>
+    <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI"></a>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs" alt="Next.js"></a>
+    <a href="https://python.langchain.com/docs/langgraph"><img src="https://img.shields.io/badge/LangGraph-🦜🕸️-blue?style=for-the-badge" alt="LangGraph"></a>
+    <a href="https://ollama.com/"><img src="https://img.shields.io/badge/Ollama-Local_LLM-white?style=for-the-badge&logo=ollama&logoColor=black" alt="Ollama"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"></a>
+  </p>
+</div>
 
 <br/>
 
 > **GovPreneurs Agentic AI** is an enterprise-grade, Multi-Agent hybrid-RAG application designed to autonomously draft, audit, and finalize highly compliant government contracting proposals (RFPs).
 
-### 📸 Platform Interface & System in Action
+<br/>
 
 <div align="center">
-
-  <b>Dashboard & Configuration Canvas</b><br><br>
   <a href="docs/dashboard.png">
-    <img src="docs/dashboard.png" alt="GovPreneurs Main Dashboard" width="100%">
+    <img src="docs/dashboard.png" alt="GovPreneurs Dashboard UI" width="100%">
   </a>
-  <br><br><br>
+</div>
 
-  <table align="center" width="100%">
+<br/>
+
+<div align="center">
+  <h3>📸 System in Action</h3>
+  <table width="100%">
     <tr>
       <td align="center" width="50%">
         <b>⚡ Agentic Pipeline Tracking</b><br><br>
@@ -39,8 +42,11 @@
       </td>
     </tr>
   </table>
-
 </div>
+
+<br/>
+
+---
 
 ## ⚡ Executive Summary
 
