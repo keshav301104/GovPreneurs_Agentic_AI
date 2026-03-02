@@ -7,30 +7,40 @@
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-🦜🕸️-blue?style=for-the-badge)](https://python.langchain.com/docs/langgraph)
 [![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-white?style=for-the-badge&logo=ollama&logoColor=black)](https://ollama.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <br/>
 
 > **GovPreneurs Agentic AI** is an enterprise-grade, Multi-Agent hybrid-RAG application designed to autonomously draft, audit, and finalize highly compliant government contracting proposals (RFPs).
 
-<br/>
+### 📸 Platform Interface & System in Action
 
-![GovPreneurs Dashboard UI](docs/dashboard.png)
+<div align="center">
 
-<br/>
-<br/>
+  <b>Dashboard & Configuration Canvas</b><br><br>
+  <a href="docs/dashboard.png">
+    <img src="docs/dashboard.png" alt="GovPreneurs Main Dashboard" width="100%">
+  </a>
+  <br><br><br>
 
-### 📸 System in Action
-
-![AI Pipeline Processing](docs/processing.png)
-
-![Human-in-the-Loop Editor](docs/editor.png)
-
-<br/>
+  <table align="center" width="100%">
+    <tr>
+      <td align="center" width="50%">
+        <b>⚡ Agentic Pipeline Tracking</b><br><br>
+        <a href="docs/processing.png">
+          <img src="docs/processing.png" alt="AI Pipeline Processing" width="100%"/>
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <b>📝 Human-in-the-Loop Canvas</b><br><br>
+        <a href="docs/editor.png">
+          <img src="docs/editor.png" alt="Human-in-the-Loop Editor" width="100%"/>
+        </a>
+      </td>
+    </tr>
+  </table>
 
 </div>
-
----
 
 ## ⚡ Executive Summary
 
